@@ -19,14 +19,14 @@ public class PlayerScript : MonoBehaviour
         rd2d = GetComponent<Rigidbody2D>();
         score.text = scoreValue.ToString();
     }
-   //void Update(){
+   void Update(){
  
-    //if(Input.GetKeyDown("escape"))
-  //  Application.Quit();
+    if(Input.GetKeyDown("escape"))
+    Application.Quit();
  
-    //        } (im not sure if we need this)
+            } //(im not sure if we need this)
 
-    // Update is called once per frame
+     //Update is called once per frame
     void FixedUpdate()
     {
         float hozMovement = Input.GetAxis("Horizontal");
